@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
@@ -14,11 +13,12 @@
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы 
         к обучению вы можете использовать в своей жизни?
-        <a class="header__link" href="#">Узнать →</a>
+        <a class="header__link link" href="#">Узнать →</a>
       </p>
       <img class="header__main-illustration" src="./images/header-image.png" alt="мальчик с собакой">
       <div class="header__square-pic"></div>
     </header>
+
     <main class="content">
       <section class="description">
         <section class="two-columns">
@@ -38,7 +38,7 @@
 
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
-        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
         <div class="cards">
           <section class="cards__item">
             <img class="cards__image" alt="книга" src="./images/cards-attention.png">
@@ -70,10 +70,10 @@
 
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
-        <p class=" section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <h3 class=" section-subtitle">Для тех, кто любит прокрастинировать</h3>
         <div class="video__iframes">
-          <iframe class="video__iframe" src="https://www.youtube.com/watch?v=arj7oStGLkU"></iframe>
-          <iframe class="video__iframe" src="https://www.youtube.com/watch?v=5MgBikgcWnY"></iframe>
+          <iframe class="video__iframe"  src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+          <iframe class="video__iframe"  src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -93,12 +93,12 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
-        <a href="#" class="feynman__link">Подробнее →</a>
+        <a href="#" class="feynman__link link">Подробнее →</a>
       </section>
 
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
-        <p class="section-subtitle">Про учёбу и мозг</p>
+        <h3 class="section-subtitle">Про учёбу и мозг</h3>
         <ul class="table">
           <li class="table__cell">
             <h4 class="table__heading">86 миллиардов</h4>
@@ -148,15 +148,15 @@
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <img class="khan__book-pic" src="./images/khan-book.jpg" alt="обложка книги">
-            <a class="khan__buy-link>" href="#">Купить книгу →</a>
+            <div class="khan__book-pic"></div>
+            <a class="khan__buy-link link" href="#">Купить книгу →</a>
           </div>
         </section>
       </section>
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h4 class="table__heading table__heading_theme_dark">1</h4>
@@ -201,7 +201,35 @@
         </ul>
         <div class="kaufman__triangle"></div>
       </section>
+
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+        <ul class="logo-zone">
+          <li class="logo-zone__item">
+            <a href="https://arzamas.academy/" class="resources__link link" target="_blank">
+              <img src="./images/logo/resources-arzamas.svg" alt="лого арзамас" class="resources__logo">
+            </a>
+          </li>
+          <li class="logo-zone__item">
+            <a href="https://nplus1.ru/" class="resources__link link" target="_blank">
+              <img src="./images/logo/resources-n1.svg" alt="лого н+1" class="resources__logo">
+            </a>
+          </li>
+          <li class="logo-zone__item">
+            <a href="https://www.strelka.com/ru" class="resources__link link" target="_blank">
+              <img src="./images/logo/resources-strelka.svg" alt="лого стрелка" class="resources__logo">
+            </a>
+          </li>
+          <li class="logo-zone__item">
+            <a href="https://polka.academy/" class="resources__link link" target="_blank">
+              <img src="./images/logo/resources-polka.svg" alt="лого полка" class="resources__logo">
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
+    
     <footer class="footer">
       <div class="footer__columns footer__columns_content_copyright">
         <div class="footer__column footer__column_content_copyright">
@@ -220,11 +248,11 @@
         </div>
         <div class="footer__column  footer__column_content_social">
           <p class="footer__column-heading">Соцсети</p>
-          <a class="footer__column-link" href="#" target="_blank">
+          <a class="footer__column-link link" href="#" target="_blank">
             <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="лого фейсбук">Facebook</a>
-          <a class="footer__column-link" href="https://vk.com/dehucka_c" target="_blank">
+          <a class="footer__column-link link" href="https://vk.com/dehucka_c" target="_blank">
             <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="лого ВКонтакте">ВКонтакте</a>
-          <a class="footer__column-link" href="https://www.instagram.com/_kapitankorablya_/" target="_blank">
+          <a class="footer__column-link link" href="https://www.instagram.com/_kapitankorablya_/" target="_blank">
             <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="лого Инстаграм">Instagram</a>
           </div>
       </div>
