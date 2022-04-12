@@ -1,5 +1,5 @@
 .footer {
     background-color: #1f1f1f;
-    padding: 60px 0 22px 0;
+    padding: 60px 0 40px 0;  /*если делать по брифу, то отступ в сумме с отступом .footer__author будет 68px*/
     text-align: center;
   }
